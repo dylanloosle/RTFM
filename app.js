@@ -5,6 +5,10 @@ app.constant('fb', {
 });
 app.config(function($routeProvider){
     $routeProvider
+        .when('/login', {
+            templateUrl: '/JavaScript/RTFM/login/login.html',
+            controller: 'loginCtrl'
+        })
         .when('/threads', {
             templateUrl: '/Javascript/RTFM/threads/threads.html',
             controller: 'threadsCtrl',
